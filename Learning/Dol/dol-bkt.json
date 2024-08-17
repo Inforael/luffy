@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "despensa-online",
+  "private_key_id": "fc5a1e3804f89196213d926636636058e6b88f2d",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQC+7gQduRaqTdYd\n1ijn7OW1FjGHN56p5Nu6OSw7BwaK4/xzwXiL+xbEZr0yF2x6dmvlKhVRLUUBTTcg\nVQuNPZC0RoUti2cC1ZI3BSnoYnbJgVJRSirI6zYT6DiyWvqT9E5E6ljM6f1uIuN8\ngHRrvaLgAltOAZhC9yODbXxLdcax2o3Lh0D4RhvfTZWQEBHwnp1iD44oPkPvjgJx\nyR6DaV4YAa8CMYp+05OLEGxYUmimNnxqRyl5c29HRcC/gCk5eclJOneutYvA9DUv\nG6qBioXBx6izq9fvXrJPn6N4WeXMdBT/Th0fB3dKJey3oB7O9uBAmBsA6cTCxQSD\nkrERv/DZAgMBAAECggEABlYxx/HCD+YUQ+USclDBYUSgDAU7dxcxIrRYjzShEeAr\nW1p8X3r2dboU2pIpR8Q2jwJvTC8qMeGdQYMJETI4o1RkLE+K3EQjKD/RNP+ll8j6\nvCzFED+G3zDEcZ5FiukKEE1Nzq6PunAefYiUNJTfOxDg9Q0Q/7H3mVpQzH6sw5oh\num/xTtUxT0du986R4bc5XGlFZhlf2DKUURAbBmYxhJXjMhBiQCW/s/8hej734Cfw\nSuJkIFqGt1z8T5AldXHkbKI1/y+e3fgxDxd4vc2fBrQW0T34dP6MldX17X8VU569\nQtHRGisrj+NvY40aV7dr4XMYfD9PURk6V5hqYoFN3QKBgQDhz6Urpb32X4oRLfKa\nRxJ4uPB1z9qB5XQIM6M2VhLb58s+YN5AfzNPObATDGXP22NsPZnDbCVLHOD7gdDx\npbZObI3JAMHzVjRyiPFKOMKwAGteyOVoqzNUZt6lTx/5KW1yo579AA1n6NMyZnAB\neipWy5GEfDfo3O/KlKZ9sQR7JQKBgQDYdI+ZHrnCKpxsLZksf74sxAnxHlfHdvNN\nfJDc/E0m0CdmixxOrF2Uc0DZMECUJfQNwM5uT5v9R6WcU2oRWC/47oJf6dDeXgLk\no87Y7iQUhyLZrwyoDx3uI+4lwt49aWBQPPnIpQpagMIf3I0yGLaTOLWArLdTBwIf\n7u56ft6qpQKBgDXandvRBYMSugzq1mcw+BjOkpqmXciI/qlOF2jIEmtb1r8jvx3G\nuGf2rCV+2XE/M3EHJ/rReft2Abo59akMCnSdsxrzEU6FirCeNF2tN9Fd6D2M0Bms\nauuANS1bt5Zm6PFkUHCqaIgVoPjuMVxI1HwqxKPCNFtXBeFcnnBvnU/5AoGBALOK\nO3HuonYDkivIxry6WKwZD4YIfRbd+4HSSPaD8Bq5nXTY/mnjXtu7nZaJB4fa00x1\nGMU3E1RLEXtRVTF9zIzWiR21e6J2qD+t/+y/2v2L+cRGBmF/6HuXIfoAYQbfWRw0\n95sOCkB3fI2hCxz6krYa27IXkRg1P/Xs4bKJeXhhAoGBAKe04zk9Oq+fH2AlmjzR\nLZ9PVg3NqHphqSgfD97c2znJz9f9C1URZLIaHuim72+0ZLnxa314ykPnlG+LyHRo\nwqu4V1hlxVltl0sLn5XwGf8tz4PJswOb4B7/K91kFU86Vh0bbqf+xn0uXs2ySkXo\n0YIrD1PNQLdcgqO+KvQWclO+\n-----END PRIVATE KEY-----\n",
+  "client_email": "dol-bkt@despensa-online.iam.gserviceaccount.com",
+  "client_id": "101671682496337975800",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/dol-bkt%40despensa-online.iam.gserviceaccount.com"
+}

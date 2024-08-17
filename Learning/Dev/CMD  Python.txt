@@ -1,0 +1,144 @@
+Obs: Python faz diferença entre maisculo e minusculo
+
+
+-----------------------------------------------------------
+cmd para mostrar o que já foi digitado
+
+alt + P vai apara frente ou mostra a última coisa digitada
+alt + N mostra os comando digitardos anterior mente
+ 
+
+Para imprimir na tela 
+---------------------
+
+print('teste')
+
+--------------------------------
+
+cmd para verificar tipo de dados 
+
+type(3.1415)
+
+-----------------------------------------------------
+
+cmd id para verificar posição de gravação na memória
+
+id(45)
+
+----------------------------------------------------
+Cmd para igualdade 
+
+==
+a == b
+
+1 == 1 verdadeiro
+
+ao usar um =  você está fazendo uma atribuição de valores 
+
+a = 1
+
+
+----------------------------------------------------
+Cmd para comentar codigo tem que usar #
+
+# este codigo está comentado agora 
+
+---------------------------------------------------------
+
+Cmd len para contar caracter 
+
+a= 1234
+len(a)
+4
+
+---------------------------------------------------------
+cmd para entrada de dados 
+
+nome = input('digite o nome:')
+print (nome)
+
+--------------------------------------------------------
+Comdando para converter dados
+
+converte em string, inteiro e float
+
+str(1234)
+int( )
+float( )
+
+---------------------------------------------------------
+loop infinito
+
+while True 
+
+break 
+
+----------------------------
+
+cmd para ver conteudo de uma lista 
+
+  nota = [  8.0, 7.0, 5.0, 3.0 ,7.0 ]
+  print(nota[0])
+
+
+---------------------------------
+
+a = input('para ver sua nota digite 1:')
+
+if a == 1:
+    n0 = 8.0
+    n1 = 7.0
+    n2 = 5.0
+    n3 = 3.0
+    n4 = 7.0
+while True:
+    soma = n0 + n1 + n2 + n3 + n4
+    print(soma)
+    result = soma / 5
+    print(result)
+    
+    
+    break
+print('resultado e :', result)
+
+----------------------------------------
+
+a = input('para ver sua nota digite 1:')
+i = 4
+n = 0
+soma = 0
+result = 0
+
+if a == 1:
+  nota = [  8.0, 7.0, 5.0, 3.0 ,7.0 ]
+  while n <= i :
+      soma =  soma + nota [n]
+      print('sua prova', (n + 1), 'sua nota foi:' , soma)
+      n = n + 1
+      result = soma / 5
+      
+print(' sua media e :', result, ' nice vc foi aprovado')     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

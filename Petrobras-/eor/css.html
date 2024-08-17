@@ -1,0 +1,755 @@
+
+/* Comando/Acessores */
+
+
+"<style>
+ /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+  font-family: Trebuchet MS;
+  background-color: transparent;
+  width: 135px;
+  height: 70px;
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+  border-radius: 5%;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: white;
+  color: black;
+  border: 1px solid #bbb;
+}
+
+/* Style the back side */
+.flip-card-back {
+  width: 100%;
+  background-color: #004221;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+.funcao{
+  font-size: 10px;
+  font-weight: bold;
+}
+.nome{
+  font-size:9px;
+}
+.nome-back{
+  font-size:9px;
+  height:27px;
+  padding-left:47px;
+  font-weight: bold;
+}
+.gerencia{
+  font-size:8px;
+  width:80px;
+  text-align:left;
+  padding-left:15px;
+}
+.teams{
+    height: 20px;
+    width: 20px;
+    background: url('https://upload.wikimedia.org/wikipedia/commons/5/50/Microsoft_Teams.png');
+    background-size: cover;
+    background-position: center;
+    position:absolute;
+    top: 45px;
+    left: 110px;
+}
+  .profile-img {
+    height: 40px;
+    width: 40px;
+    background: url('xxxlinkxxx');
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    border-radius: 50%;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+}
+</style>
+
+
+<div class=""flip-card"">
+  <div class=""flip-card-inner"">
+    <div class=""flip-card-front"">
+      <p class=""funcao"">xxxfuncaoxxx</p>
+      <p class=""nome"">xxxnomexxx</p>
+    </div>
+    <div class=""flip-card-back"">
+      <div class=""profile-img""></div>
+      <p class=""nome-back"" style="""">xxxnomexxx</p>
+      <p class=""gerencia"">xxxgerenciaxxx</p>
+          <a href=""xxxteamsxxx"" target=""_blanc"" class=""teams""></a>
+    </div>
+  </div>
+</div> "
+
+----------------------------------------------------------------------------------------------
+
+html comando = 
+var csshtml = SELECTEDVALUE('Planilha1 (2)'[Comando/Acessores])
+var nome = SELECTEDVALUE('nominata EOR POCOS'[Nome])
+var gerencia = SELECTEDVALUE('nominata EOR POCOS'[TCRP MV_BIRH_EFETIVO_BASICA.UNIDADE_ORGANIZACIONAL])
+var funcao = SELECTEDVALUE('nominata EOR POCOS'[Caixinha])
+var foto = SELECTEDVALUE('nominata EOR POCOS'[Linkfoto])
+var teams = SELECTEDVALUE('nominata EOR POCOS'[Linkteams])
+
+return 
+
+SUBSTITUTE( 
+  SUBSTITUTE(
+    SUBSTITUTE(
+      SUBSTITUTE( SUBSTITUTE(csshtml,"xxxnomexxx",nome),
+      "xxxgerenciaxxx",gerencia)
+      ,"xxxfuncaoxxx", funcao),"xxxlinkxxx", foto),"xxxteamsxxx",teams)
+
+
+
+
+----------------------------------------------------------------------------------------------
+
+Finanças
+
+
+"<style>
+
+.flip-card {
+  font-family: Trebuchet MS;
+  background-color: transparent;
+  width: 135px;
+  height: 70px;
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 5%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: #9BFFAE;
+  color: black;
+  border: 1px solid #bbb;
+}
+
+/* Style the back side */
+.flip-card-back {
+  width: 100%;
+  background-color: #004221;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+.funcao{
+  width:135px;
+  font-size: 11px;
+  font-weight: bold;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.nome{
+  font-size:9px;
+}
+.nome-back{
+  font-size:9px;
+  height:27px;
+  padding-left:47px;
+  font-weight: bold;
+}
+.gerencia{
+  font-size:8px;
+  width:80px;
+  text-align:left;
+  padding-left:15px;
+}
+.teams{
+    height: 20px;
+    width: 20px;
+    background: url('https://upload.wikimedia.org/wikipedia/commons/5/50/Microsoft_Teams.png');
+    background-size: cover;
+    background-position: center;
+    position:absolute;
+    top: 45px;
+    left: 110px;
+}
+  .profile-img {
+    height: 40px;
+    width: 40px;
+    background: url('xxxlinkxxx');
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    border-radius: 50%;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+}
+</style>
+ <div class=""flip-card"">
+  <div class=""flip-card-inner"">
+    <div class=""flip-card-front"">
+      <div class=""funcao"">xxxfuncaoxxx</div>
+    </div>
+    <div class=""flip-card-back"">
+      <div class=""profile-img""></div>
+      <p class=""nome-back"" style="""">xxxnomexxx</p>
+      <p class=""gerencia"">xxxgerenciaxxx</p>
+          <a href=""xxxteamsxxx"" target=""_blanc"" class=""teams""></a>
+    </div>
+  </div>
+</div> 
+"
+-------------------------------------------------------------------------------------------------------
+
+Logistica
+
+
+"<style>
+
+.flip-card {
+  font-family: Trebuchet MS;
+  background-color: transparent;
+  width: 135px;
+  height: 70px;
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 5%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: #FFA585;
+  color: black;
+  border: 1px solid #bbb;
+}
+
+/* Style the back side */
+.flip-card-back {
+  width: 100%;
+  background-color: #004221;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+.funcao{
+  width:135px;
+  font-size: 11px;
+  font-weight: bold;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.nome{
+  font-size:9px;
+}
+.nome-back{
+  font-size:9px;
+  height:27px;
+  padding-left:47px;
+  font-weight: bold;
+}
+.gerencia{
+  font-size:8px;
+  width:80px;
+  text-align:left;
+  padding-left:15px;
+}
+.teams{
+    height: 20px;
+    width: 20px;
+    background: url('https://upload.wikimedia.org/wikipedia/commons/5/50/Microsoft_Teams.png');
+    background-size: cover;
+    background-position: center;
+    position:absolute;
+    top: 45px;
+    left: 110px;
+}
+  .profile-img {
+    height: 40px;
+    width: 40px;
+    background: url('xxxlinkxxx');
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    border-radius: 50%;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+}
+</style>
+ <div class=""flip-card"">
+  <div class=""flip-card-inner"">
+    <div class=""flip-card-front"">
+      <div class=""funcao"">xxxfuncaoxxx</div>
+    </div>
+    <div class=""flip-card-back"">
+      <div class=""profile-img""></div>
+      <p class=""nome-back"" style="""">xxxnomexxx</p>
+      <p class=""gerencia"">xxxgerenciaxxx</p>
+          <a href=""xxxteamsxxx"" target=""_blanc"" class=""teams""></a>
+    </div>
+  </div>
+</div> 
+"
+-------------------------------------------------------------------------------------------------------
+
+Planejamento
+
+
+"<style>
+
+.flip-card {
+  font-family: Trebuchet MS;
+  background-color: transparent;
+  width: 135px;
+  height: 70px;
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 5%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: #86C8FA;
+  color: black;
+  border: 1px solid #bbb;
+}
+
+/* Style the back side */
+.flip-card-back {
+  width: 100%;
+  background-color: #004221;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+.funcao{
+  width:135px;
+  font-size: 11px;
+  font-weight: bold;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.nome{
+  font-size:9px;
+}
+.nome-back{
+  font-size:9px;
+  height:27px;
+  padding-left:47px;
+  font-weight: bold;
+}
+.gerencia{
+  font-size:8px;
+  width:80px;
+  text-align:left;
+  padding-left:15px;
+}
+.teams{
+    height: 20px;
+    width: 20px;
+    background: url('https://upload.wikimedia.org/wikipedia/commons/5/50/Microsoft_Teams.png');
+    background-size: cover;
+    background-position: center;
+    position:absolute;
+    top: 45px;
+    left: 110px;
+}
+  .profile-img {
+    height: 40px;
+    width: 40px;
+    background: url('xxxlinkxxx');
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    border-radius: 50%;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+}
+</style>
+ <div class=""flip-card"">
+  <div class=""flip-card-inner"">
+    <div class=""flip-card-front"">
+      <div class=""funcao"">xxxfuncaoxxx</div>
+    </div>
+    <div class=""flip-card-back"">
+      <div class=""profile-img""></div>
+      <p class=""nome-back"" style="""">xxxnomexxx</p>
+      <p class=""gerencia"">xxxgerenciaxxx</p>
+          <a href=""xxxteamsxxx"" target=""_blanc"" class=""teams""></a>
+    </div>
+  </div>
+</div> 
+"
+
+-------------------------------------------------------------------------------------------------------
+
+Operações
+
+
+"<style>
+
+.flip-card {
+  font-family: Trebuchet MS;
+  background-color: transparent;
+  width: 135px;
+  height: 70px;
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 5%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: #FF8181;
+  color: black;
+  border: 1px solid #bbb;
+}
+
+/* Style the back side */
+.flip-card-back {
+  width: 100%;
+  background-color: #004221;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+.funcao{
+  width:135px;
+  font-size: 11px;
+  font-weight: bold;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.nome{
+  font-size:9px;
+}
+.nome-back{
+  font-size:9px;
+  height:27px;
+  padding-left:47px;
+  font-weight: bold;
+}
+.gerencia{
+  font-size:8px;
+  width:80px;
+  text-align:left;
+  padding-left:15px;
+}
+.teams{
+    height: 20px;
+    width: 20px;
+    background: url('https://upload.wikimedia.org/wikipedia/commons/5/50/Microsoft_Teams.png');
+    background-size: cover;
+    background-position: center;
+    position:absolute;
+    top: 45px;
+    left: 110px;
+}
+  .profile-img {
+    height: 40px;
+    width: 40px;
+    background: url('xxxlinkxxx');
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    border-radius: 50%;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+}
+</style>
+ <div class=""flip-card"">
+  <div class=""flip-card-inner"">
+    <div class=""flip-card-front"">
+      <div class=""funcao"">xxxfuncaoxxx</div>
+    </div>
+    <div class=""flip-card-back"">
+      <div class=""profile-img""></div>
+      <p class=""nome-back"" style="""">xxxnomexxx</p>
+      <p class=""gerencia"">xxxgerenciaxxx</p>
+          <a href=""xxxteamsxxx"" target=""_blanc"" class=""teams""></a>
+    </div>
+  </div>
+</div> 
+"
+
+-------------------------------------------------------------------------------------------------------
+
+Clock
+"<style>
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: #D9D7DD;
+}
+
+.clock {
+  border-radius: 100%;
+  background: #ffffff;
+  font-family: ""Montserrat"";
+  border: 5px solid white;
+  box-shadow: inset 2px 3px 8px 0 rgba(0, 0, 0, 0.1);
+}
+
+.wrap {
+  overflow: hidden;
+  position: relative;
+  width: 350px;
+  height: 350px;
+  border-radius: 100%;
+}
+
+.minute,
+.hour {
+  position: absolute;
+  height: 100px;
+  width: 6px;
+  margin: auto;
+  top: -27%;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: black;
+  transform-origin: bottom center;
+  transform: rotate(0deg);
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+.minute {
+  position: absolute;
+  height: 130px;
+  width: 4px;
+  top: -38%;
+  left: 0;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.4);
+  transform: rotate(90deg);
+}
+
+.second {
+  position: absolute;
+  height: 90px;
+  width: 2px;
+  margin: auto;
+  top: -26%;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  border-radius: 4px;
+  background: #FF4B3E;
+  transform-origin: bottom center;
+  transform: rotate(180deg);
+  z-index: 1;
+}
+
+.dot {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 12px;
+  height: 12px;
+  border-radius: 100px;
+  background: white;
+  border: 2px solid #1b1b1b;
+  border-radius: 100px;
+  margin: auto;
+  z-index: 1;
+}
+</style>
+
+<div class=""clock"">
+  <div class=""wrap"">
+    <span class=""hour""></span>
+    <span class=""minute""></span>
+    <span class=""second""></span>
+    <span class=""dot""></span>
+  </div>
+</div>
+
+<script>
+var inc = 1000;
+
+clock();
+
+function clock() {
+  const date = new Date();
+
+  const hours = ((date.getHours() + 11) % 12 + 1);
+  const minutes = date.getMinutes();
+  const seconds = date.getSeconds();
+  
+  const hour = hours * 30;
+  const minute = minutes * 6;
+  const second = seconds * 6;
+  
+  document.querySelector('.hour').style.transform = `rotate(${hour}deg)`
+  document.querySelector('.minute').style.transform = `rotate(${minute}deg)`
+  document.querySelector('.second').style.transform = `rotate(${second}deg)`
+}
+
+setInterval(clock, inc);
+
+</script>"
+
+----------------------------------------------------------------------------------------------
+
+html comando = 
+var csshtml = SELECTEDVALUE('Planilha1 (2)'[Comando/Acessores])
+var nome = SELECTEDVALUE('nominata EOR POCOS'[Nome])
+var gerencia = SELECTEDVALUE('nominata EOR POCOS'[TCRP MV_BIRH_EFETIVO_BASICA.UNIDADE_ORGANIZACIONAL])
+var funcao = SELECTEDVALUE('nominata EOR POCOS'[Caixinha])
+var foto = SELECTEDVALUE('nominata EOR POCOS'[Linkfoto])
+var teams = SELECTEDVALUE('nominata EOR POCOS'[Linkteams])
+
+return 
+
+SUBSTITUTE( 
+  SUBSTITUTE(
+    SUBSTITUTE(
+      SUBSTITUTE( SUBSTITUTE(csshtml,"xxxnomexxx",nome),
+      "xxxgerenciaxxx",gerencia)
+      ,"xxxfuncaoxxx", funcao),"xxxlinkxxx", foto),"xxxteamsxxx",teams)
+
+      
+
+
+
+
+
+
+
+

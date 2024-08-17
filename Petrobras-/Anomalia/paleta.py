@@ -1,0 +1,12 @@
+# #israel
+# print('html')
+# print('tag')
+# print('self')
+# print('fdfd')
+# print('html')
+# print(10==10)
+# print(10==11)
+# print(type(10==10))
+# print(int('1'),type(int('1')))
+# print(float('1') + 1)
+# print(bool(' '))
