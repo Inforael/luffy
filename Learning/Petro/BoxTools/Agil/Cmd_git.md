@@ -111,6 +111,7 @@ atualização no not capco02
 :) ==== > git status 02
 cm apartid do luffy  
 
+<<<<<<< HEAD
 
 # Lista de comandos Markdown
 
@@ -153,4 +154,6 @@ cm apartid do luffy
  My favorite search engine is [Duck Duck Go](https://duckduckgo.com)
 
 ================================================================
+=======
+>>>>>>> 6173fe30516c047de5825d0eb987b47a5dba61ad
 >>>>>>> master
